@@ -65,12 +65,51 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by MrGuo on 2017/10/24.
+ */
+
+const toolKit = __webpack_require__(1);
+const matrix = toolKit.makeMatrix();
+console.log(matrix);
+
+const a=Array.from({length:9},(v,i)=>i);
+console.log(a);
+console.log(toolKit.shuffle(a));
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 /**
  * Created by MrGuo on 2017/10/24.
  */
 
+const matrixToolKit = {
+    makeRow(v = 0){
+        const array = new Array(9);
+        array.fill(v);
+        return array;
+    },
+
+    makeMatrix(v = 0){
+        return Array.from({length: 9}, () => this.makeRow(v));
+    },
+
+    /*Fisher-Yates 洗牌法*/
+    shuffle(array){
+        const endIndex = array.length - 2;
+        for (let i = 0; i < endIndex; i++) {
+            const j = i + Math.floor(Math.random() * (array.length - i));
+            [array[i], array[j]] = [array[j], array[j]];
+        }
+        return array;
+    },
+};
+
+module.exports = matrixToolKit;
 
 /***/ })
 /******/ ]);
