@@ -71,15 +71,27 @@
  * Created by MrGuo on 2017/10/24.
  */
 
-const toolKit = __webpack_require__(1);
+const Grid = __webpack_require__(1);
+const grid = new Grid($('#container'));
+grid.build();
+grid.layout();
 
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Created by MrGuo on 2017/10/31.
+ */
+//生成九宫格
+const Toolkit = __webpack_require__(2);
 class Grid{
     constructor(container){
         this._$container = container;
     }
 
     build(){
-        const matrix = toolKit.makeMatrix();
+        const matrix = Toolkit.matrix.makeMatrix();
         const rowGroupClasses = ['row_g_top','row_g_middle','row_g_bottom'];
         const colGroupClasses = ['col_g_left','col_g_center','col_g_right'];
         const $cells = matrix.map(rowValues=>{
@@ -108,17 +120,16 @@ class Grid{
             })
     }
 }
-const grid = new Grid($('#container'));
-grid.build();
-grid.layout();
+module.exports = Grid;
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, exports) {
 
 /**
  * Created by MrGuo on 2017/10/24.
  */
+//矩阵和数组相关工具
 
 const matrixToolKit = {
     makeRow(v = 0){
@@ -131,7 +142,7 @@ const matrixToolKit = {
         return Array.from({length: 9}, () => this.makeRow(v));
     },
 
-    /*Fisher-Yates 洗牌法*/
+    /*Fisher-Yates 洗牌法，对传入数组进行随机排序，最后返回排序后的数组*/
     shuffle(array){
         const endIndex = array.length - 2;
         for (let i = 0; i < endIndex; i++) {
@@ -141,8 +152,27 @@ const matrixToolKit = {
         return array;
     },
 };
+/*
+* 宫坐标系工具
+* */
+const boxToolkit = {
 
-module.exports = matrixToolKit;
+};
+
+
+
+//工具集
+module.exports = class Toolkit{
+    //矩阵和数据相关的工具
+    static get matrix(){
+        return matrixToolKit;
+    }
+
+    //宫坐标系相关的工具
+    static get box(){
+        return boxToolkit;
+    }
+};
 
 /***/ })
 /******/ ]);
