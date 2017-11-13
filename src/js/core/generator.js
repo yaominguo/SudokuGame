@@ -48,14 +48,15 @@ class Generator{
             }
 
             row[colIndex] = n;
+            this.fillRow(n,rowIndex+1);
             //去下一行填写n，如果没有填写进去，就继续寻找当前行下一个位置
-            if(!this.fillRow(n,rowIndex+1)){
-                row[colIndex] = 0;
-                continue
-            }
-            return true;
+            // if(!this.fillRow(n,rowIndex+1)){
+            //     row[colIndex] = 0;
+            //     continue
+            // }
+            // return true;
         }
-        return false;
+        // return false;
 
     }
 }

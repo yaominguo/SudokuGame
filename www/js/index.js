@@ -155,7 +155,7 @@ const matrixToolKit = {
     /*检查指定位置可以填写数字n*/
     checkFillable(matrix, n, rowIndex, colIndex){
         const row=matrix[rowIndex];
-        const column=this.makeRow().map((v,i)=>{return matrix[i][colIndex]});
+        const column=this.makeRow().map((v,i)=> matrix[i][colIndex]);
         const {boxIndex}=boxToolkit.convertToBoxIndex(rowIndex,colIndex);
         const box=boxToolkit.getBoxCells(matrix,boxIndex);
         for(let i=0;i<9;i++){
