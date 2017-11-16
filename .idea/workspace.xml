@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f893f8a-eb33-4aa4-aea4-a548bee27772" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/index.js.map" afterPath="$PROJECT_DIR$/www/js/index.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/checker.js" afterPath="$PROJECT_DIR$/src/js/core/checker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/generator.js" afterPath="$PROJECT_DIR$/src/js/core/generator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/sudoku.js" afterPath="$PROJECT_DIR$/src/js/core/sudoku.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/ui/grid.js" afterPath="$PROJECT_DIR$/src/js/ui/grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/main.less" afterPath="$PROJECT_DIR$/src/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/main.css" afterPath="$PROJECT_DIR$/www/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/index.js" afterPath="$PROJECT_DIR$/www/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,23 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="4" column="34" lean-forward="false" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#42#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="generator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="260">
+              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="43" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -44,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="191">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#checkArray#0" expanded="false" />
               </folding>
@@ -56,24 +52,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <file leaf-file-name="grid.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="170" column="4" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
+            <state relative-caret-position="420">
+              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#0#42#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="toolkit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <file leaf-file-name="main.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="193">
+              <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sudoku.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#42#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,6 +103,9 @@
       <find>checkFillable</find>
       <find>,</find>
       <find>orders</find>
+      <find>checkArray</find>
+      <find>get</find>
+      <find>fla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,15 +120,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/src/gulpfile.js" />
-        <option value="$PROJECT_DIR$/src/less/main.less" />
-        <option value="$PROJECT_DIR$/src/js/core/sudoku.js" />
         <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
-        <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
-        <option value="$PROJECT_DIR$/src/js/core/generator.js" />
         <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
+        <option value="$PROJECT_DIR$/src/js/core/generator.js" />
         <option value="$PROJECT_DIR$/src/js/core/checker.js" />
+        <option value="$PROJECT_DIR$/src/js/core/sudoku.js" />
+        <option value="$PROJECT_DIR$/src/js/ui/grid.js" />
+        <option value="$PROJECT_DIR$/src/less/main.less" />
       </list>
     </option>
   </component>
@@ -137,8 +148,7 @@
     <handled-path value="$PROJECT_DIR$/src/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="660" />
-    <option name="width" value="620" />
+    <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -417,18 +427,18 @@
       <workItem from="1509453667304" duration="1669000" />
       <workItem from="1509455497997" duration="2762000" />
       <workItem from="1510236038004" duration="5053000" />
-      <workItem from="1510836662549" duration="3885000" />
+      <workItem from="1510836662549" duration="9278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24471000" />
+    <option name="totallyTimeSpent" value="29864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="660" y="0" width="620" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67278796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3200953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -742,13 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/ui/popupnumbers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -763,29 +766,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="284">
+          <caret line="170" column="4" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
           <folding>
-            <element signature="e#0#42#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="45" column="15" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -799,28 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/toolkit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="170" column="4" lean-forward="true" selection-start-line="170" selection-start-column="4" selection-end-line="170" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="260">
+          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="43" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
@@ -829,10 +806,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="191">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#checkArray#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="60" column="7" lean-forward="true" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/ui/grid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
