@@ -173,7 +173,7 @@ const boxToolkit = {
     getBoxCells(matrix,boxIndex){
         const startRowIndex=Math.floor(boxIndex/3)*3;
         const startColIndex=boxIndex%3*3;
-        const result=[];
+        let result=[];
         for(let cellIndex=0;cellIndex<9;cellIndex++){
             const rowIndex=startRowIndex+Math.floor(cellIndex/3);
             const colIndex=startColIndex+cellIndex%3;

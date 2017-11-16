@@ -16,10 +16,11 @@ const matrixToolKit = {
 
     /*Fisher-Yates 洗牌法，对传入数组进行随机排序，最后返回排序后的数组*/
     shuffle(array){
-        const endIndex = array.length - 2;
+        const length = array.length;
+        const endIndex = length - 2;
         for (let i = 0; i < endIndex; i++) {
-            const j = i + Math.floor(Math.random() * (array.length - i));
-            [array[i], array[j]] = [array[j], array[j]];
+            const j = i + Math.floor((length-i)*Math.random());
+            [array[i], array[j]] = [array[j], array[i]];
         }
         return array;
     },
