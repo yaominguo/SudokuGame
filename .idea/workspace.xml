@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f893f8a-eb33-4aa4-aea4-a548bee27772" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/generator.js" afterPath="$PROJECT_DIR$/src/js/core/generator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/toolkit.js" afterPath="$PROJECT_DIR$/src/js/core/toolkit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/index.js" afterPath="$PROJECT_DIR$/www/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/core/checker.js" afterPath="$PROJECT_DIR$/src/js/core/checker.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,13 +32,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generator.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/core/generator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
               <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="31" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="checker.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="n#!!doc;n#checkArray#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,7 +110,6 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/src/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/less/main.less" />
-        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
         <option value="$PROJECT_DIR$/src/js/core/sudoku.js" />
         <option value="$PROJECT_DIR$/src/js/ui/popupnumbers.js" />
         <option value="$PROJECT_DIR$/src/js/index.js" />
@@ -109,6 +117,7 @@
         <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/src/js/core/generator.js" />
         <option value="$PROJECT_DIR$/src/js/core/toolkit.js" />
+        <option value="$PROJECT_DIR$/src/js/core/checker.js" />
       </list>
     </option>
   </component>
@@ -128,8 +137,8 @@
     <handled-path value="$PROJECT_DIR$/src/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="642" />
-    <option name="width" value="638" />
+    <option name="x" value="660" />
+    <option name="width" value="620" />
     <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -408,18 +417,18 @@
       <workItem from="1509453667304" duration="1669000" />
       <workItem from="1509455497997" duration="2762000" />
       <workItem from="1510236038004" duration="5053000" />
-      <workItem from="1510836662549" duration="3034000" />
+      <workItem from="1510836662549" duration="3885000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23620000" />
+    <option name="totallyTimeSpent" value="24471000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="642" y="0" width="638" height="800" extended-state="0" />
+    <frame x="660" y="0" width="620" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67423016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67278796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -733,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/core/sudoku.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -821,6 +823,16 @@
           <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="31" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/core/checker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc;n#checkArray#0" expanded="false" />
           </folding>
         </state>
       </provider>
