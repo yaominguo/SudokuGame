@@ -35,6 +35,7 @@ module.exports = class PopupNumbers{
     }
 
     popup($cell){
+        //TODO 如果在手机屏幕上点击右边的宫会超出屏幕，需修改优化
         this._$targetCell = $cell;
         const {left, top} = $cell.position();
         this._$panel.css({

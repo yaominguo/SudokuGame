@@ -8,7 +8,7 @@ function checkArray(array){
     const marks = new Array(length);
     marks.fill(true);
 
-    for(let i=0;i<length-1;i++){
+    for(let i=0;i<length;i++){
         if(!marks[i]){ //如果检查之前就已经为false的就不再检查了
             continue;
         }

@@ -172,7 +172,9 @@ grid.bindPopup(popupNumbers);
 
 //检查
 $('#check').on('click',e=>{
-    grid.check();
+    if(grid.check()){
+        alert('成功！');
+    }
 });
 $('#reset').on('click',e=>{
     grid.reset();
@@ -238,6 +240,9 @@ class Grid{
     bindPopup(popupNumbers){
         this._$container.on('click','span',e=>{
            const $cell = $(e.target);
+           if($cell.is('.fixed')){//如果是固定的数字则无法点击
+               return;
+           }
            popupNumbers.popup($cell);
         });
     }
@@ -274,7 +279,10 @@ class Grid{
     }
     //重置当前迷盘到初始状态
     reset(){
-
+        this._$container.find('span:not(.fixed)')
+            .removeClass('error mark1 mark1')
+            .addClass('empty')
+            .text(0);
     }
 }
 module.exports = Grid;
@@ -390,7 +398,7 @@ function checkArray(array){
     const marks = new Array(length);
     marks.fill(true);
 
-    for(let i=0;i<length-1;i++){
+    for(let i=0;i<length;i++){
         if(!marks[i]){ //如果检查之前就已经为false的就不再检查了
             continue;
         }
@@ -524,6 +532,7 @@ module.exports = class PopupNumbers{
     }
 
     popup($cell){
+        //TODO 如果在手机屏幕上点击右边的宫会超出屏幕，需修改优化
         this._$targetCell = $cell;
         const {left, top} = $cell.position();
         this._$panel.css({
