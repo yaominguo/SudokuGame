@@ -62,6 +62,12 @@ body {
       &.fixed{
         background-color: #eee;
       }
+      &.mark1{
+        background: lightpink;
+      }
+      &.mark2{
+        background: lightgreen;
+      }
     }
     &.row_g_bottom{
       >span{
@@ -80,7 +86,20 @@ body {
     }
   }
 }
+@popupCellSize:40px;
+.popup-num{
+  .container();
+  position: absolute;
+  padding-left:0;
+  .row{
+    >span{
+      width:@popupCellSize;
+      height: @popupCellSize;
+      line-height:@popupCellSize;
+    }
+  }
 
+}
 .dashboard {
   position: absolute;
   bottom: 0;

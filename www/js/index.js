@@ -161,9 +161,14 @@ module.exports = class Toolkit{
  */
 
 const Grid = __webpack_require__(2);
+const PopupNumbers =__webpack_require__(5);
+
 const grid = new Grid($('#container'));
 grid.build();
 grid.layout();
+
+const popupNumbers = new PopupNumbers($('#popupNumbers'));
+grid.bindPopup(popupNumbers);
 
 /***/ }),
 /* 2 */
@@ -212,6 +217,12 @@ class Grid{
                 'line-height':width+'px',
                 'font-size':width<32?width/2+'px':'',
             })
+    }
+    bindPopup(popupNumbers){
+        this._$container.on('click','span',e=>{
+           const $cell = $(e.target);
+           popupNumbers.popup($cell);
+        });
     }
 }
 module.exports = Grid;
@@ -312,6 +323,59 @@ module.exports = class Generator{
     }
 };
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+/**
+ * Created by MrGuo on 2017/10/31.
+ */
+//处理弹出的操作面板
+
+module.exports = class PopupNumbers{
+    constructor($panel){
+        this._$panel = $panel.hide().removeClass('hidden');
+        this._$panel.on('click','span',e=>{
+            const $cell = this._$targetCell;
+            const $span = $(e.target);
+
+            //回填样式
+            if($span.hasClass('mark1')){
+                if($cell.hasClass('mark1')){
+                    $cell.removeClass('mark1');
+                }else {
+                    $cell.removeClass('mark2').addClass('mark1');
+                }
+            }else if($span.hasClass('mark2')){
+                if($cell.hasClass('mark2')){
+                    $cell.removeClass('mark2');
+                }else {
+                    $cell.removeClass('mark1').addClass('mark2');
+                }
+            }else if($span.hasClass('empty')){
+            //取消数字和mark
+                $cell.text(0).addClass('empty');
+            }else {
+                //回填数字
+                $cell.removeClass('empty').text($span.text());
+            }
+            this.hide();
+        })
+    }
+
+    popup($cell){
+        this._$targetCell = $cell;
+        const {left, top} = $cell.position();
+        this._$panel.css({
+            left:`${left}px`,
+            top:`${top}px`
+        }).show();
+    }
+    hide(){
+        this._$panel.hide();
+    }
+};
 
 /***/ })
 /******/ ]);
