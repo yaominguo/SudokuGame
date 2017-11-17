@@ -54,14 +54,26 @@ body > * {
 .container .row > span.empty {
   color: #ffffff;
 }
+.container .row > span.error {
+  background-color: red;
+}
+.container .row > span.error.empty {
+  color: red;
+}
 .container .row > span.fixed {
   background-color: #eee;
 }
 .container .row > span.mark1 {
   background: lightpink;
 }
+.container .row > span.mark1.empty {
+  color: lightpink;
+}
 .container .row > span.mark2 {
   background: lightgreen;
+}
+.container .row > span.mark2.empty {
+  color: lightgreen;
 }
 .container .row.row_g_bottom > span {
   border-bottom-width: 1px;
@@ -101,14 +113,26 @@ body > * {
 .popup-num .row > span.empty {
   color: #ffffff;
 }
+.popup-num .row > span.error {
+  background-color: red;
+}
+.popup-num .row > span.error.empty {
+  color: red;
+}
 .popup-num .row > span.fixed {
   background-color: #eee;
 }
 .popup-num .row > span.mark1 {
   background: lightpink;
 }
+.popup-num .row > span.mark1.empty {
+  color: lightpink;
+}
 .popup-num .row > span.mark2 {
   background: lightgreen;
+}
+.popup-num .row > span.mark2.empty {
+  color: lightgreen;
 }
 .popup-num .row.row_g_bottom > span {
   border-bottom-width: 1px;

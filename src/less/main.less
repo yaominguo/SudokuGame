@@ -59,14 +59,26 @@ body {
       &.empty{
         color: #ffffff;
       }
+      &.error{
+        background-color: red;
+        &.empty{
+          color: red;
+        }
+      }
       &.fixed{
         background-color: #eee;
       }
       &.mark1{
         background: lightpink;
+        &.empty{
+          color: lightpink;
+        }
       }
       &.mark2{
         background: lightgreen;
+        &.empty{
+          color: lightgreen;
+        }
       }
     }
     &.row_g_bottom{

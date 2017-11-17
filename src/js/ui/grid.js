@@ -4,6 +4,7 @@
 //生成九宫格
 const Toolkit = require('../core/toolkit');
 const Sudoku = require('../core/sudoku');
+const Checker = require('../core/checker');
 class Grid{
     constructor(container){
         this._$container = container;
@@ -47,6 +48,41 @@ class Grid{
            const $cell = $(e.target);
            popupNumbers.popup($cell);
         });
+    }
+    //重建游戏
+    rebuild(){
+        this._$container.empty();
+        this.build();
+        this.layout()
+    }
+    //检查用户游戏结果
+    check(){
+        const $rows = this._$container.children();
+        const data = $rows.map((rowIndex,div)=>{
+            return $(div).children().map((colIndex,span)=>{
+                return parseInt($(span).text()) || 0;
+            })
+        }).toArray().map($data=>$data.toArray());
+        const checker = new Checker(data);
+        if (checker.check()){
+            return true;
+        }
+        //检查不成功，进行标记
+        const marks = checker.matrixMarks;
+        this._$container.children().each((rowIndex,div)=>{
+            $(div).children().each((colIndex,span)=>{
+                const $span =$(span);
+                if($span.is('.fixed')||marks[rowIndex][colIndex]){
+                    $span.removeClass('error');
+                }else{
+                    $span.addClass('error');
+                }
+            })
+        })
+    }
+    //重置当前迷盘到初始状态
+    reset(){
+
     }
 }
 module.exports = Grid;
