@@ -18,13 +18,10 @@ $('#check').on('click',e=>{
         alert('成功！');
     }
 });
+//重置
 $('#reset').on('click',e=>{
     grid.reset();
 });
-$('#clear').on('click',e=>{
-    grid.clear();
-});
-
 //重建
 $('#rebuild').on('click',e=>{
     grid.rebuild();
